@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://<username>.github.io/<repository-name>",
+  "homepage": "https://girma1978.github.io/profile",
 
   "scripts": {
     "dev": "vite",
