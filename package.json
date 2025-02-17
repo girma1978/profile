@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://girma1978.github.io/profile",
-
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
