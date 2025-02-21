@@ -1,0 +1,105 @@
+index.css
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Use a basic font, you can change it later */
+  background-color: #f4f4f4; /* A soft background color */
+  color: #333; /* Text color */
+  line-height: 1.6;
+  color: white;
+}
+
+a {
+  text-decoration: none; /* Remove underlines from links */
+  color: inherit; /* Inherit the parent color */
+}
+
+/* Main container with centered content */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Utility classes for spacing */
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* Flex utilities */
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #444;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
