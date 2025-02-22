@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
 
 body{
-  margin: 2px;
+  margin: 10px;
   padding: 10px;
+  
 }
+
 
 /* ==============================NavBar=================================== */
 .navigationbar {
@@ -16,6 +17,7 @@ body{
   font-size: 4em;
   list-style: none;
   margin-bottom: 10px;
+  height: auto;
   
   background: linear-gradient(-45deg, #342a47 20%, #7f8185 20%, #7f8185 40%, #342a47 40%, #342a47 60%, #7f8185 60%, #7f8185 80%, #342a47 80%);
 
@@ -55,26 +57,27 @@ body{
   background-color: #003366;
   color: #fff;
 }
-
 /* =============================About Me======================================== */
 
 .aboutme {
   background-color: #003366;
   font-family: sans-serif;
-  font-size: 4rem; /* Increased font size */
-  margin: auto;
+  font-size: 4rem;
 }
 
-p {
-  text-indent: 20px; /* Indents the first line of each paragraph */
+/* =============================About Me - Biography Section======================================== */
+.aboutme-biography p {
+  padding-left: 80px; /* Indentation for all lines of the paragraph */
+  padding-right:30px;
   margin-bottom: 2rem; /* Optional: Adds spacing between paragraphs */
-  text-align: justify;
+  text-align: justify; /* Optional: Makes the text spread evenly across the line */
 }
+
 
 .aboutme h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 5rem; /* Increased font size */
-  margin-bottom: 3rem;
+  font-size: 5rem;
+  margin-bottom: 1rem;
   color: white;
 }
 
@@ -84,7 +87,8 @@ p {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 4px;
 }
 
 .aboutme-image {
@@ -95,12 +99,12 @@ p {
 
 @media screen and (max-width: 768px) {
   .aboutme {
-    font-size: 3rem; /* Adjusted for medium screens */
+    font-size: 3rem;
     padding: 1.5rem;
   }
 
   .aboutme h2 {
-    font-size: 3rem; /* Adjusted for medium screens */
+    font-size: 3rem;
   }
 
   .aboutme-image-container {
@@ -108,20 +112,16 @@ p {
     height: 100px;
     margin-bottom: 1rem;
   }
-
-  .aboutme-biography p {
-    margin-bottom: 1rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .aboutme {
-    font-size: 2.5rem; /* Adjusted for smaller screens */
+    font-size: 2.5rem;
     padding: 1rem;
   }
 
   .aboutme h2 {
-    font-size: 2.5rem; /* Adjusted for smaller screens */
+    font-size: 2.5rem;
   }
 
   .aboutme-image-container {
@@ -130,6 +130,7 @@ p {
     margin-bottom: 0.5rem;
   }
 }
+
 /* ========================portfolio========================== */
 section {
   background-color: #003366;
@@ -154,11 +155,10 @@ section h2 {
 .portfolio {
   display: grid;
   grid-template-columns: 30% 30%;
-  height: 80%;
   padding: 2px 2px 2px 2px;
   background-color: #003366;
   margin-left: 20px;
-  gap: 20px;
+  gap: 30px;
 }
 
 /* =====================project=============================== */
@@ -179,7 +179,7 @@ section h2 {
 
 .project img {
   width: 100%;
-  height: auto;
+  height: 80%;
   border-radius: 8px;
 }
 

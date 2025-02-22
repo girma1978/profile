@@ -11,28 +11,28 @@ const Portfolio = () => {
   // Array of 4 projects
   const projects: ProjectType[] = [
     {
-      title: 'Project 1',
-      deployedUrl: 'https://deployed-project-1.com',
-      githubUrl: 'https://github.com/user/project-1',
-      imageUrl: 'https://github.com/girma1978/profile/blob/main/src/assets/images/abay-rever.png', // Updated image link
+      title: 'GWU DB',
+      deployedUrl: 'https://deployed-project-1.com', // Update with actual deployed URL
+      githubUrl: 'https://github.com/girma1978/gwu-db',
+      imageUrl: 'https://raw.githubusercontent.com/girma1978/profile/main/src/assets/images/abay-rever.png', // Updated image link to raw image
     },
     {
-      title: 'Project 2',
-      deployedUrl: 'https://deployed-project-2.com',
-      githubUrl: 'https://github.com/user/project-2',
-      imageUrl: 'https://github.com/girma1978/profile/blob/main/src/assets/images/baro-river.png', // Updated image link
+      title: 'API and Server',
+      deployedUrl: 'https://deployed-project-2.com', // Update with actual deployed URL
+      githubUrl: 'https://github.com/girma1978/API-And-Server',
+      imageUrl: 'https://raw.githubusercontent.com/girma1978/profile/main/src/assets/images/baro-river.png', // Updated image link to raw image
     },
     {
-      title: 'Project 3',
-      deployedUrl: 'https://deployed-project-3.com',
-      githubUrl: 'https://github.com/user/project-3',
-      imageUrl: 'https://github.com/girma1978/profile/blob/main/src/assets/images/bridge.png', // Updated image link
+      title: 'GWU Assignment',
+      deployedUrl: 'https://deployed-project-3.com', // Update with actual deployed URL
+      githubUrl: 'https://github.com/girma1978/gwu-assignment',
+      imageUrl: 'https://raw.githubusercontent.com/girma1978/profile/main/src/assets/images/bridge.png', // Updated image link to raw image
     },
     {
-      title: 'Project 4',
-      deployedUrl: 'https://deployed-project-4.com',
-      githubUrl: 'https://github.com/user/project-4',
-      imageUrl: 'https://github.com/girma1978/profile/blob/main/src/assets/images/horizon.png', // Updated image link
+      title: 'Typescript Assignment',
+      deployedUrl: 'https://deployed-project-4.com', // Update with actual deployed URL
+      githubUrl: 'https://github.com/girma1978/typescript-assignmnet',
+      imageUrl: 'https://raw.githubusercontent.com/girma1978/profile/main/src/assets/images/horizon.png', // Updated image link to raw image
     },
   ];
 
