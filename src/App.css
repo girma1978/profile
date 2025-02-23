@@ -383,49 +383,47 @@ ul li {
   font-size: 24px; /* 1.5rem = 24px */
   margin-bottom: 12px; /* 0.8rem = 12px */
 }
-
-/* ==============================Media Queries==================================== */
-
-/* For medium screen sizes */
-@media screen and (max-width: 768px) {
+/* For larger screens like desktops */
+@media screen and (min-width: 1024px) {
+  /* Adjust font sizes and layout for large screens */
   .resume {
-    font-size: 48px; /* 3rem = 48px */
+    font-size: 64px; /* Adjusted for larger screens */
   }
 
   .resume h1 {
-    font-size: 72px; /* 4.5rem = 72px */
+    font-size: 96px; /* Adjusted for larger screens */
   }
 
   .resume h2 {
-    font-size: 56px; /* 3.5rem = 56px */
+    font-size: 80px;
   }
 
   .resume h3 {
-    font-size: 45px; /* 2.8rem = 45px */
+    font-size: 60px;
   }
 
   .resume h4 {
-    font-size: 32px; /* 2rem = 32px */
+    font-size: 48px;
   }
 
   .contact {
-    font-size: 48px; /* 3rem = 48px */
+    font-size: 64px;
   }
 
   .contact h1 {
-    font-size: 72px; /* 4.5rem = 72px */
+    font-size: 96px;
   }
 
   .contact h2 {
-    font-size: 56px; /* 3.5rem = 56px */
+    font-size: 80px;
   }
 
   .contact input,
   .contact textarea {
-    font-size: 19px; /* 1.2rem = 19px */
+    font-size: 24px;
   }
 
   .contact button {
-    font-size: 19px; /* 1.2rem = 19px */
+    font-size: 24px;
   }
 }
