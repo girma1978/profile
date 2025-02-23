@@ -5,8 +5,7 @@ html, body {
   box-sizing: border-box;
   background-color: white;
 }
-
-/* ==================header============================================== */
+/* ================== Header ============================================== */
 /* Base styles for the header */
 .headerclass {
   position: sticky;
@@ -17,6 +16,7 @@ html, body {
   font-size: 64px; /* 4em = 64px */
   list-style: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #003366;
 }
 
 /* Mobile-first styles for the header */
@@ -24,9 +24,10 @@ html, body {
   padding: 16px 32px;
   font-size: 16px;
   text-align: center;
+  background-color: #003366;
 }
 
-/* ==============================Media Queries==================================== */
+/* ============================== Media Queries ========================== */
 
 /* For medium screen sizes (tablets and up) */
 @media screen and (max-width: 768px) {
@@ -38,6 +39,20 @@ html, body {
   .navigationbar {
     flex-direction: column; /* Stack the navigation items vertically on tablets */
     align-items: center;
+  }
+
+  .navigationbar ul {
+    display: block;
+    width: 100%; /* Make the navigation links fill available space */
+    text-align: center; /* Center the links on smaller screens */
+  }
+
+  .navigationbar li {
+    margin: 10px 0; /* Adjust margin for vertical stack */
+  }
+
+  .nav-links {
+    font-size: 18px; /* Adjust font size for smaller devices */
   }
 }
 
@@ -51,30 +66,39 @@ html, body {
   .navigationbar {
     justify-content: space-between; /* Keep navigation items aligned in a row for larger screens */
   }
+
+  .navigationbar ul {
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+  }
+
+  .navigationbar li {
+    margin-left: 16px;
+  }
+
+  .nav-links {
+    font-size: 24px; /* Slightly larger text for larger screens */
+  }
 }
 
-/* ==============================NavBar=================================== */
+/* ============================== NavBar ==================================== */
 .navigationbar {
   display: flex;
   width: 100%;
   flex-direction: row;
   background-color: #003366;
   padding-top: 10px;
-  padding-bottom: 0%;
+  padding-bottom: 0;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
   padding: 16px 32px; /* 1rem = 16px */
   font-family: sans-serif;
-  font-size: 64px; /* 4em = 64px */
   list-style: none;
   background: linear-gradient(-45deg, 
     rgba(0, 0, 0, 0.1) 20%, 
-    #b2bfbf 20%, 
-    #b2bfbf 40%, 
-    rgba(0, 0, 0, 0.1) 40%, 
-    rgba(0, 0, 0, 0.1) 60%, 
-    #b2bfbf 60%, 
-    #b2bfbf 80%, 
+    #b2bfbf 20% 40%, 
+    rgba(0, 0, 0, 0.1) 40% 60%, 
+    #b2bfbf 60% 80%, 
     rgba(0, 0, 0, 0.1) 80%);
   z-index: 10; /* Ensure the header stays above other content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -82,6 +106,7 @@ html, body {
 
 .navigationbar h2 {
   margin: 0;
+  font-size: 24px;
 }
 
 .navigationbar ul {
@@ -100,7 +125,7 @@ html, body {
   color: white;
   padding: 8px 16px; /* 0.5rem 1rem = 8px 16px */
   border-radius: 5px;
-  font-size: 48px; /* 3em = 48px */
+  font-size: 18px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -421,8 +446,9 @@ section h2 {
 }
 
 /* ===============================Lists=========================================== */
-ul {
-  list-style-type:none;
+.resume lu{
+  list-style-type:disc;
+  font-size: 4px;
   margin-left: 32px; /* 2rem = 32px */
   color: white;
 }
