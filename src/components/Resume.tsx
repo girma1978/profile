@@ -1,5 +1,3 @@
-
-
 const Resume = () => {
   return (
     <section className="resume">
@@ -23,9 +21,12 @@ const Resume = () => {
         <li>CSS</li>
         <li>JavaScript</li>
         <li>JQuery</li>
-        <li>Responsive Design</li>
         <li>React</li>
+        <li>Vue</li>
+        <li>Angular</li>
         <li>Bootstrap</li>
+        <li>Tailwind CSS</li>
+        <li>Responsive Design (Media Queries)</li>
       </ul>
 
       <h4>Back-end Proficiencies</h4>
@@ -34,9 +35,12 @@ const Resume = () => {
         <li>Node.js</li>
         <li>Express</li>
         <li>MySQL</li>
-        <li>Sequelize</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+        <li>Sequelize </li>
         <li>REST</li>
         <li>GraphQL</li>
+        <li>Git</li>
       </ul>
     </section>
   );
