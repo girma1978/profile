@@ -3,20 +3,20 @@ html, body {
   padding: 2px;
   font-size: 16px; /* 1rem = 16px */
   box-sizing: border-box;
-  background-color:  white;
+  background-color: white;
 }
+
 /* ==================header============================================== */
 /* Base styles for the header */
 .headerclass {
   position: sticky;
-  top:0;
-  margin-left:0;
+  top: 0;
+  margin-left: 0;
   padding: 0;
   font-family: sans-serif;
   font-size: 64px; /* 4em = 64px */
   list-style: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
 }
 
 /* Mobile-first styles for the header */
@@ -67,7 +67,7 @@ html, body {
   font-family: sans-serif;
   font-size: 64px; /* 4em = 64px */
   list-style: none;
- background: linear-gradient(-45deg, 
+  background: linear-gradient(-45deg, 
     rgba(0, 0, 0, 0.1) 20%, 
     #b2bfbf 20%, 
     #b2bfbf 40%, 
@@ -78,7 +78,6 @@ html, body {
     rgba(0, 0, 0, 0.1) 80%);
   z-index: 10; /* Ensure the header stays above other content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 .navigationbar h2 {
@@ -432,6 +431,7 @@ ul li {
   font-size: 24px; /* 1.5rem = 24px */
   margin-bottom: 12px; /* 0.8rem = 12px */
 }
+
 /* For larger screens like desktops */
 @media screen and (min-width: 1024px) {
   /* Adjust font sizes and layout for large screens */
