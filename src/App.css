@@ -8,6 +8,8 @@ html, body {
 /* ==============================NavBar=================================== */
 .navigationbar {
   display: flex;
+  flex-direction: row;
+  width: auto;
   background-color: #003366;
   padding-top: 10px;
   padding-bottom: 0%;
