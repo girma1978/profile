@@ -1,22 +1,24 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
   font-size: 16px; /* 1rem = 16px */
+  background-color: #fff;
   box-sizing: border-box;
 }
 
 /* ==============================NavBar=================================== */
+
 .navigationbar {
   display: flex;
-  padding-top: 10px;
+  width: auto;
   padding-bottom: 0%;
   justify-content: space-between;
   align-items: left;
-  padding: 16px 32px; /* 1rem = 16px */
+  padding: 16px 32px;
   font-family: sans-serif;
-  font-size: 64px; /* 4em = 64px */
+  font-size: 20px; /* Set font-size to 20px */
   list-style: none;
-  /* background: linear-gradient(-45deg, 
+  background: linear-gradient(-45deg, 
   #19014A 20%, 
   #b2bfbf 20%, 
   #b2bfbf 40%, 
@@ -25,7 +27,7 @@ html, body {
   #b2bfbf 60%, 
   #b2bfbf 80%, 
   #19014A 80%
-); */
+);
 }
 
 .navigationbar h2 {
@@ -40,15 +42,15 @@ html, body {
 }
 
 .navigationbar li {
-  margin-left: 16px; /* 1rem = 16px */
+  margin-left: 16px;
 }
 
 .nav-links {
   text-decoration: none;
   color: white;
-  padding: 8px 16px; /* 0.5rem 1rem = 8px 16px */
+  padding: 8px 16px;
   border-radius: 5px;
-  font-size: 48px; /* 3em = 48px */
+  font-size: 20px; /* Set font-size to 20px */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -62,27 +64,45 @@ html, body {
   color: #fff;
 }
 
+/* ========================== Header ================================== */
+.headerclass {
+  width: 100%;
+  background-color: #003366;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerclass .navigationbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+
 /* =============================About Me======================================== */
+
 .aboutme {
   height: auto;
-  padding: 32px; /* 2rem = 32px */
+  padding: 32px;
   background-color: #003366;
   font-family: sans-serif;
-  font-size: 64px; /* 4rem = 64px */
+  font-size: 20px; /* Set font-size to 20px */
 }
 
 .aboutme-biography p {
   padding-top: 30px;
-  padding-left: 100px;
-  padding-right: 80px;
+  padding-left: 50px;
+  padding-right: 30px;
   padding-bottom: 20px;
-  margin-bottom: 32px; /* 2rem = 32px */
+  margin-bottom: 32px;
   text-align: justify;
 }
 
 .aboutme h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 80px; /* 5rem = 80px */
+  font-size: 24px; /* Set font-size to 24px */
   margin-bottom: 16px;
   color: white;
 }
@@ -93,7 +113,7 @@ html, body {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 16px; /* 1rem = 16px */
+  margin-bottom: 16px;
   margin-left: 40px;
 }
 
@@ -104,146 +124,145 @@ html, body {
   padding: 0%;
 }
 
-/* ========================portfolio========================== */
+/* ======================== Portfolio Styling ========================== */
 section {
   background-color: #003366;
-  height: auto;
+  margin: 0;
+  padding: 32px;
+  font-family: sans-serif;
+  font-size: 20px;
+  height:100vh;
+}
+
+h2 {
+  color: white;
+  font-size: 22px;
 }
 
 .portfolio {
   display: grid;
-  grid-template-columns: 30% 30%;
-  grid-template-rows: 40% 40%;
-  padding: 2px 2px 2px 2px;
-  background-color: #003366;
-  margin-left: 20px;
-  padding: 32px; /* 2rem = 32px */
-  font-family: sans-serif;
-  font-size: 64px; /* 4rem = 64px */
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 5px; /* Reduced gap */
+  max-width: 600px; /* Further reduced width */
+  width: 100%;
+  height: 100vh; /* Prevents images from overlapping footer */
+  overflow: hidden;
+  align-items: start; /* Align items to the top */
 }
 
-section h2 {
-  font-size: 40px; /* 2.5rem = 40px */
-  margin-left: 10px;
-  color: white;
-  text-align: left;
-  padding: 8px;
-  background-color: #003366;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px; /* 2rem = 32px */
-}
-
-/* =====================project=============================== */
+/* ======================== Project Styling ========================== */
 .project {
-  display: flex;
-  flex-direction: column;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
   background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-}
-
-.project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.image-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 100%; /* Adjusted height */
+  position: relative;
+}
+
+/* Image Container */
+.image-container {
+  width: 100%;
+  height: 100%; /* Ensure the image fully fits the container */
+  position: relative;
+  overflow: hidden;
 }
 
 .project img {
   width: 100%;
-  height: 80%;
-  border-radius: 8px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fully fits inside */
+  z-index: 2px;
 }
 
+/* Overlay for Text Inside Image */
 .overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  text-align: center;
-  border-radius: 8px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 .overlay h3 {
-  font-size: 28px; /* 1.8rem = 28px */
-  margin-bottom: 16px; /* 10px */
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0;
 }
 
-.project .links {
-  margin-top: 16px; /* 10px */
-}
-
+/* Underline Links */
 .project .links a {
-  display: inline-block;
-  margin: 8px 0; /* 5px 0 */
+  text-decoration: underline;
   color: #007bff;
-  text-decoration: none;
-  font-size: 19px; /* 1.2rem = 19px */
-  transition: color 0.3s ease;
+  font-size: 16px;
 }
 
 .project .links a:hover {
   color: #0056b3;
-  text-decoration: underline;
 }
+
+/* Hover Effect */
+.project:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+/* Responsive: Stacks on small screens */
+@media (max-width: 600px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 3px; /* Further reduced gap for mobile */
+  }
+}
+
 
 /* =============================Resume style========================================= */
 .resume {
   height: auto;
-  padding: 32px; /* 2rem = 32px */
+  padding: 20px;
   background-color: #003366;
   font-family: sans-serif;
-  font-size: 64px; /* 4rem = 64px */
+  font-size: 20px; /* Set font-size to 20px */
   align-items: stretch;
 }
 
 .resume h1 {
-  font-size: 96px; /* 6rem = 96px */
+  font-size: 24px; /* Set font-size to 24px */
   color: white;
   text-align: left;
 }
 
 .resume h2 {
-  font-size: 88px; /* 5.5rem = 88px */
+  font-size: 22px; /* Set font-size to 22px */
   color: white;
   text-align: left;
 }
 
 .resume h3 {
-  font-size: 72px; /* 4.5rem = 72px */
+  font-size: 20px; /* Set font-size to 20px */
   color: white;
-  margin-top: 32px; /* 2rem = 32px */
+  margin-top: 20px;
 }
 
 .resume span {
   display: inline;
-  margin-bottom: 32px; /* 2rem = 32px */
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .resume-download-link {
   display: inline-block;
-  padding: 8px 16px; /* 0.5rem 1rem = 8px 16px */
+  padding: 8px 16px;
   background-color: #003366;
   color: white;
   text-decoration: none;
@@ -256,30 +275,30 @@ section h2 {
 }
 
 .resume h4 {
-  font-size: 64px; /* 4rem = 64px */
-  margin-bottom: 8px; /* 0.5rem = 8px */
+  font-size: 20px; /* Set font-size to 20px */
+  margin-bottom: 8px;
   color: white;
 }
 
 /* ===============================Contact=========================================== */
 .contact {
   height: auto;
-  padding: 32px; /* 2rem = 32px */
+  padding: 32px;
   background-color: #003366;
   font-family: sans-serif;
-  font-size: 64px; /* 4rem = 64px */
+  font-size: 20px; /* Set font-size to 20px */
 }
 
 .contact h1 {
-  font-size: 96px; /* 6rem = 96px */
-  margin-bottom: 16px; /* 1rem = 16px */
+  font-size: 24px; /* Set font-size to 24px */
+  margin-bottom: 16px;
   color: white;
   text-align: left;
 }
 
 .contact h2 {
-  font-size: 88px; /* 5.5rem = 88px */
-  margin-bottom: 16px; /* 1rem = 16px */
+  font-size: 22px; /* Set font-size to 22px */
+  margin-bottom: 16px;
   color: white;
   text-align: left;
 }
@@ -291,40 +310,40 @@ section h2 {
 
 .contact label {
   display: block;
-  margin-bottom: 8px; /* 0.5rem = 8px */
+  margin-bottom: 8px;
   color: white;
 }
 
 .contact input {
   width: 100%;
-  padding: 12px; /* 0.8rem = 12px */
-  margin-bottom: 16px; /* 1rem = 16px */
+  padding: 12px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 24px; /* 1.5rem = 24px */
-  height: 100px;
+  font-size: 16px; /* Set font-size to 16px */
+  height: 40px;
 }
 
 .contact textarea {
   width: 100%;
-  padding: 12px; /* 0.8rem = 12px */
-  margin-bottom: 16px; /* 1rem = 16px */
+  padding: 12px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 24px; /* 1.5rem = 24px */
-  height: 1000px;
+  font-size: 16px; /* Set font-size to 16px */
+  height: 250px;
 }
 
 .contact button {
   background-color: #003366;
   color: #fff;
-  padding: 12px 24px; /* 0.8rem 1.5rem = 12px 24px */
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 24px; /* 1.5rem = 24px */
+  font-size: 16px; /* Set font-size to 16px */
   transition: background-color 0.3s ease;
 }
 
@@ -334,17 +353,16 @@ section h2 {
 
 .contact span {
   color: white;
-  font-size: 19px; /* 1.2rem = 19px */
-  margin-top: 4px; /* 0.2rem = 4px */
+  font-size: 16px; /* Set font-size to 16px */
+  margin-top: 4px;
   display: block;
 }
 
 /* ===============================Footer=========================================== */
 .footer {
   background-color: #003366;
-  height: 100%;
   text-align: center;
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
 }
 
 .footer ul {
@@ -354,95 +372,28 @@ section h2 {
 }
 
 .footer li {
-  margin: 0 32px; /* 20px */
+  margin: 0 32px;
 }
 
 .footer a {
   color: #fff;
-  font-size: 32px; /* 2rem = 32px */
+  font-size: 20px; /* Set font-size to 20px */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer a:hover {
-  color: rgb(227, 190, 190);
+  color: rgb(77, 61, 61);
   transform: scale(1.2);
 }
 
 /* ===============================Lists=========================================== */
 ul {
   list-style-type: disc;
-  margin-left: 32px; /* 2rem = 32px */
+  margin-left: 32px;
   color: white;
 }
 
 ul li {
-  font-size: 24px; /* 1.5rem = 24px */
-  margin-bottom: 12px; /* 0.8rem = 12px */
-}
-
-/* ==============================Media Queries==================================== */
-
-/* For small screen sizes (Mobile-first) */
-@media screen and (max-width: 480px) {
-  .navigationbar {
-    font-size: 32px; /* 2rem = 32px */
-    padding: 8px 16px; /* Adjust padding */
-  }
-
-  .portfolio {
-    grid-template-columns: 1fr; /* Single column layout */
-    padding: 16px; /* Adjust padding */
-  }
-
-  .resume {
-    font-size: 32px; /* 2rem = 32px */
-  }
-
-  .contact form {
-    max-width: 100%;
-    margin-left: 0;
-  }
-}
-
-/* For medium screen sizes (Tablets) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .navigationbar {
-    font-size: 48px; /* 3rem = 48px */
-  }
-
-  .portfolio {
-    grid-template-columns: 1fr 1fr; /* Two-column layout */
-    padding: 16px; /* Adjust padding */
-  }
-
-  .resume {
-    font-size: 48px; /* 3rem = 48px */
-  }
-
-  .contact form {
-    max-width: 80%;
-    margin-left: 0;
-  }
-}
-
-/* For large screen sizes (Desktop) */
-@media screen and (min-width: 769px) {
-  .navigationbar {
-    font-size: 64px; /* 4rem = 64px */
-    padding: 16px 32px; /* Adjust padding */
-  }
-
-  .portfolio {
-    grid-template-columns: 30% 30%; /* Two-column layout */
-    padding: 32px; /* Adjust padding */
-  }
-
-  .resume {
-    font-size: 64px; /* 4rem = 64px */
-  }
-
-  .contact form {
-    max-width: 50%;
-    margin-left: 15px;
-  }
+  font-size: 16px; /* Set font-size to 16px */
+  margin-bottom: 12px;
 }
