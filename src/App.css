@@ -1,112 +1,35 @@
 html, body {
-  margin: 10px;
-  padding: 2px;
+  margin: 0;
+  padding: 0;
   font-size: 16px; /* 1rem = 16px */
   box-sizing: border-box;
-  background-color: white;
 }
-/* ================== Header ============================================== */
-/* Base styles for the header */
-.headerclass {
-  position: sticky;
-  width: auto;
-  top: 0;
-  margin-left: 0;
-  padding: 0;
+
+/* ==============================NavBar=================================== */
+.navigationbar {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 0%;
+  justify-content: space-between;
+  align-items: left;
+  padding: 16px 32px; /* 1rem = 16px */
   font-family: sans-serif;
   font-size: 64px; /* 4em = 64px */
   list-style: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #003366;
-}
-
-/* Mobile-first styles for the header */
-.headerclass {
-  padding: 16px 32px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #003366;
-}
-
-/* ============================== Media Queries ========================== */
-
-/* For medium screen sizes (tablets and up) */
-@media screen and (max-width: 768px) {
-  .headerclass {
-    padding: 12px 24px;
-    font-size: 14px; /* Reduce font size for tablets */
-  }
-
-  .navigationbar {
-    flex-direction: column; /* Stack the navigation items vertically on tablets */
-    align-items: center;
-  }
-
-  .navigationbar ul {
-    display: block;
-    width: 100%; /* Make the navigation links fill available space */
-    text-align: center; /* Center the links on smaller screens */
-  }
-
-  .navigationbar li {
-    margin: 10px 0; /* Adjust margin for vertical stack */
-  }
-
-  .nav-links {
-    font-size: 18px; /* Adjust font size for smaller devices */
-  }
-}
-
-/* For large screen sizes (desktops and larger) */
-@media screen and (min-width: 1024px) {
-  .headerclass {
-    padding: 20px 40px;
-    font-size: 18px; /* Larger font for desktops */
-  }
-
-  .navigationbar {
-    justify-content: space-between; /* Keep navigation items aligned in a row for larger screens */
-  }
-
-  .navigationbar ul {
-    display: flex;
-    justify-content: flex-end; /* Align navigation to the right */
-  }
-
-  .navigationbar li {
-    margin-left: 16px;
-  }
-
-  .nav-links {
-    font-size: 24px; /* Slightly larger text for larger screens */
-  }
-}
-
-/* ============================== NavBar ==================================== */
-.navigationbar {
-  display: flex;
-  flex-direction: row;
-  background-color: #003366;
-  padding-top: 10px;
-  padding-bottom: 0;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px; /* 1rem = 16px */
-  font-family: sans-serif;
-  list-style: none;
   background: linear-gradient(-45deg, 
-  #b2bfbf 0% 16.6%,         /* First strip */
-  rgba(0, 0, 0, 0.1) 16.6% 33.3%,  /* Second strip */
-  #b2bfbf 33.3% 50%,        /* Third strip */
-  rgba(0, 0, 0, 0.1) 50% 66.6%,  /* Fourth strip */
-  #b2bfbf 66.6% 83.3%,      /* Fifth strip */
-  rgba(0, 0, 0, 0.1) 83.3% 100%); /* Sixth strip */
-
+  #19014A 20%, 
+  #b2bfbf 20%, 
+  #b2bfbf 40%, 
+  #19014A 40%, 
+  #19014A 60%, 
+  #b2bfbf 60%, 
+  #b2bfbf 80%, 
+  #19014A 80%
+);
 }
 
 .navigationbar h2 {
   margin: 0;
-  font-size:100px;
 }
 
 .navigationbar ul {
@@ -125,7 +48,7 @@ html, body {
   color: white;
   padding: 8px 16px; /* 0.5rem 1rem = 8px 16px */
   border-radius: 5px;
-  font-size: 80px;
+  font-size: 48px; /* 3em = 48px */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -142,10 +65,10 @@ html, body {
 /* =============================About Me======================================== */
 .aboutme {
   height: auto;
-  padding: 32px;
+  padding: 32px; /* 2rem = 32px */
   background-color: #003366;
   font-family: sans-serif;
-  font-size: 64px;
+  font-size: 64px; /* 4rem = 64px */
 }
 
 .aboutme-biography p {
@@ -153,13 +76,13 @@ html, body {
   padding-left: 100px;
   padding-right: 80px;
   padding-bottom: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 32px; /* 2rem = 32px */
   text-align: justify;
 }
 
 .aboutme h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 80px;
+  font-size: 80px; /* 5rem = 80px */
   margin-bottom: 16px;
   color: white;
 }
@@ -170,7 +93,7 @@ html, body {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 16px;
+  margin-bottom: 16px; /* 1rem = 16px */
   margin-left: 40px;
 }
 
@@ -178,103 +101,25 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 0;
-}
-
-@media (max-width: 768px) {
-  .aboutme {
-    padding: 16px;
-    font-size: 48px;
-  }
-
-  .aboutme h2 {
-    font-size: 48px;
-    margin-bottom: 8px;
-  }
-
-  .aboutme-biography p {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 16px;
-  }
-
-  .aboutme-image-container {
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .aboutme {
-    padding: 8px;
-    font-size: 32px;
-  }
-
-  .aboutme h2 {
-    font-size: 32px;
-    margin-bottom: 4px;
-  }
-
-  .aboutme-biography p {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 14px;
-  }
-
-  .aboutme-image-container {
-    width: 80px;
-    height: 80px;
-    margin-left: 0;
-    margin-bottom: 16px;
-  }
-
-  .aboutme-biography {
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 320px) {
-  .aboutme {
-    padding: 8px;
-    font-size: 24px;
-  }
-
-  .aboutme h2 {
-    font-size: 24px;
-    margin-bottom: 4px;
-  }
-
-  .aboutme-biography p {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 12px;
-  }
-
-  .aboutme-image-container {
-    width: 60px;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  padding: 0%;
 }
 
 /* ========================portfolio========================== */
 section {
-  height: auto;
-  padding: 32px; /* 2rem = 32px */
   background-color: #003366;
-  font-family: sans-serif;
-  font-size: 16px; /* Adjusted for better readability */
+  height: auto;
 }
 
 .portfolio {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 columns for larger screens */
-  grid-template-rows: auto;
-  padding: 2px;
+  grid-template-columns: 30% 30%;
+  grid-template-rows: 40% 40%;
+  padding: 2px 2px 2px 2px;
+  background-color: #003366;
+  margin-left: 20px;
+  padding: 32px; /* 2rem = 32px */
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 64px; /* 4rem = 64px */
   gap: 30px;
 }
 
@@ -287,28 +132,10 @@ section h2 {
   background-color: #003366;
 }
 
-/* For screens larger than 768px */
-@media (max-width: 768px) {
-  .portfolio {
-    grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
-    gap: 20px;
-  }
-}
-
-/* For screens smaller than 480px (mobile screens) */
-@media (max-width: 480px) {
-  section {
-    padding: 16px; /* Adjust padding for smaller screens */
-  }
-
-  .portfolio {
-    grid-template-columns: 1fr; /* 1 column for small screens */
-    gap: 10px;
-  }
-
-  section h2 {
-    font-size: 28px; /* Reduce font size for smaller screens */
-  }
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px; /* 2rem = 32px */
 }
 
 /* =====================project=============================== */
@@ -335,7 +162,7 @@ section h2 {
 
 .project img {
   width: 100%;
-  height: auto; /* Adjusted for responsive image behavior */
+  height: 80%;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -359,16 +186,16 @@ section h2 {
 
 .overlay h3 {
   font-size: 28px; /* 1.8rem = 28px */
-  margin-bottom: 16px;
+  margin-bottom: 16px; /* 10px */
 }
 
 .project .links {
-  margin-top: 16px;
+  margin-top: 16px; /* 10px */
 }
 
 .project .links a {
   display: inline-block;
-  margin: 8px 0;
+  margin: 8px 0; /* 5px 0 */
   color: #007bff;
   text-decoration: none;
   font-size: 19px; /* 1.2rem = 19px */
@@ -380,41 +207,14 @@ section h2 {
   text-decoration: underline;
 }
 
-/* Media Queries */
-
-/* For medium screens (tablets) */
-@media (max-width: 768px) {
-  .overlay h3 {
-    font-size: 24px; /* Smaller font size for medium screens */
-  }
-
-  .project .links a {
-    font-size: 16px; /* Adjust font size for links */
-  }
-}
-
-/* For small screens (mobile devices) */
-@media (max-width: 480px) {
-  .project {
-    padding: 12px; /* Reduce padding on mobile */
-  }
-
-  .overlay h3 {
-    font-size: 20px; /* Further reduce font size for smaller screens */
-  }
-
-  .project .links a {
-    font-size: 14px; /* Adjust font size for links */
-  }
-}
-
 /* =============================Resume style========================================= */
 .resume {
   height: auto;
   padding: 32px; /* 2rem = 32px */
   background-color: #003366;
   font-family: sans-serif;
-  font-size: 76px; 
+  font-size: 64px; /* 4rem = 64px */
+  align-items: stretch;
 }
 
 .resume h1 {
@@ -459,17 +259,6 @@ section h2 {
   font-size: 64px; /* 4rem = 64px */
   margin-bottom: 8px; /* 0.5rem = 8px */
   color: white;
-}
-.resume lu{
-  list-style-type:disc;
-  font-size: 4px;
-  margin-left: 32px; /* 2rem = 32px */
-  color: white;
-}
-
-ul li {
-  font-size: 24px; /* 1.5rem = 24px */
-  margin-bottom: 12px; /* 0.8rem = 12px */
 }
 
 /* ===============================Contact=========================================== */
@@ -575,54 +364,85 @@ ul li {
 }
 
 .footer a:hover {
-  color: rgba(208, 153, 153, 0.546);
+  color: rgb(227, 190, 190);
   transform: scale(1.2);
 }
 
 /* ===============================Lists=========================================== */
+ul {
+  list-style-type: disc;
+  margin-left: 32px; /* 2rem = 32px */
+  color: white;
+}
 
+ul li {
+  font-size: 24px; /* 1.5rem = 24px */
+  margin-bottom: 12px; /* 0.8rem = 12px */
+}
 
-/* For larger screens like desktops */
-@media screen and (min-width: 1024px) {
-  /* Adjust font sizes and layout for large screens */
+/* ==============================Media Queries==================================== */
+
+/* For small screen sizes (Mobile-first) */
+@media screen and (max-width: 480px) {
+  .navigationbar {
+    font-size: 32px; /* 2rem = 32px */
+    padding: 8px 16px; /* Adjust padding */
+  }
+
+  .portfolio {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding: 16px; /* Adjust padding */
+  }
+
   .resume {
-    font-size: 64px; /* Adjusted for larger screens */
+    font-size: 32px; /* 2rem = 32px */
   }
 
-  .resume h1 {
-    font-size: 96px; /* Adjusted for larger screens */
+  .contact form {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* For medium screen sizes (Tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navigationbar {
+    font-size: 48px; /* 3rem = 48px */
   }
 
-  .resume h2 {
-    font-size: 80px;
+  .portfolio {
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    padding: 16px; /* Adjust padding */
   }
 
-  .resume h3 {
-    font-size: 60px;
+  .resume {
+    font-size: 48px; /* 3rem = 48px */
   }
 
-  .resume h4 {
-    font-size: 48px;
+  .contact form {
+    max-width: 80%;
+    margin-left: 0;
+  }
+}
+
+/* For large screen sizes (Desktop) */
+@media screen and (min-width: 769px) {
+  .navigationbar {
+    font-size: 64px; /* 4rem = 64px */
+    padding: 16px 32px; /* Adjust padding */
   }
 
-  .contact {
-    font-size: 64px;
+  .portfolio {
+    grid-template-columns: 30% 30%; /* Two-column layout */
+    padding: 32px; /* Adjust padding */
   }
 
-  .contact h1 {
-    font-size: 96px;
+  .resume {
+    font-size: 64px; /* 4rem = 64px */
   }
 
-  .contact h2 {
-    font-size: 80px;
-  }
-
-  .contact input,
-  .contact textarea {
-    font-size: 24px;
-  }
-
-  .contact button {
-    font-size: 24px;
+  .contact form {
+    max-width: 50%;
+    margin-left: 15px;
   }
 }
