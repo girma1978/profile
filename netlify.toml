@@ -1,0 +1,10 @@
+[build]
+  base = "profile"          # Set base directory to "profile" if source code lives there
+  publish = "profile/dist"  # Publish the contents of the "profile/dist" folder
+  command = "npm run build" # The build command for Vite
+
+[build.environment]
+  NODE_ENV = "production"
+
+[context.production.environment]
+  CI = "false"

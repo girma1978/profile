@@ -1,7 +1,6 @@
+import { defineConfig } from 'vite';
 
-
-// vite.config.js
-export default {
-  base: '/profile/',  // replace with your repository name
-  // Other Vite configurations
-}
+export default defineConfig({
+  base: '/profile/',  // Adjust based on the repository name or sub-path
+  // Other Vite configurations, like plugins, build options, etc.
+});
